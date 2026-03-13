@@ -1,0 +1,5 @@
+django
+pep8-naming
+django-debug-toolbar
+django-crispy-forms
+crispy-bootstrap4

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Tasks Manger Home</h1>
+  <p>Boss Calculator!</p>
+  <h2>Dynamic content</h2>
+  <p>The tasks manager has the following record counts:</p>
+  <ul>
+    <li><strong>Bosses:</strong> {{ num_bosses }}</li>
+    <li><strong>items:</strong> {{ num_items }}</li>
+  </ul>
+
+  <p>You have visited this page
+    {{ num_visits }} time{{ num_visits|pluralize }}.
+  </p>
+
+{% endblock %}
