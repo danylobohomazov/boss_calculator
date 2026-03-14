@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>
+    Item List
+  </h1>
+  {% if item_list %}
+    <table class="table">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Chance</th>
+        <th>Price</th>
+        <th>Type</th>
+      </tr>
+
+      {% for item in item_list %}
+        <tr>
+          <td>
+            {{ item.id }}
+          </td>
+          <td>
+            {{ item.name }}
+          </td>
+          <td>
+            {{ item.chance }}
+          </td>
+          <td>
+            {{ item.price }}
+          </td>
+          <td>
+            {{ item.type }}
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+
+  {% else %}
+    <p>There are no bosses. </p>
+  {% endif %}
+{% endblock %}

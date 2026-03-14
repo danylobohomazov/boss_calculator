@@ -1,0 +1,1557 @@
+{
+  "Bosses": [
+    {
+      "The_Maven": {
+        "normal": {
+          "passes": [
+            {
+              "name": "The Maven's Writ",
+              "count": "1",
+              "type": "Fragments"
+            }
+          ],
+          "items": [
+            {
+              "category": "GuaranteedUnique",
+              "name": "Legacy of Fury",
+              "chance": "44",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Graven's Secret",
+              "chance": "16",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Arn's Anguish",
+              "chance": "16",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Olesya's Delight",
+              "chance": "16",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Doppelgänger Guise",
+              "chance": "7",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Echoforge",
+              "chance": "1",
+              "type": "Unique Weapons"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Eclipse Support",
+              "chance": "5",
+              "type": "Skill Gems"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Invert the Rules Support",
+              "chance": "20",
+              "type": "Skill Gems"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Orb of Conflict",
+              "chance": "35",
+              "type": "Currency"
+            }
+          ]
+        },
+        "uber": {
+          "passes": [
+            {
+              "name": "Reality Fragment",
+              "count": "4",
+              "type": "Fragments"
+            }
+          ],
+          "items": [
+            {
+              "category": "GuaranteedUnique",
+              "name": "Viridi's Veil",
+              "chance": "52",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Impossible Escape",
+              "chance": "33",
+              "type": "Unique Jewels"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Grace of the Goddess",
+              "chance": "13",
+              "type": "Unique Weapons"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Progenesis",
+              "chance": "2",
+              "type": "Unique Flasks"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Awakened Empower Support",
+              "chance": "0.25",
+              "type": "Skill Gems"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Awakened Enhance Support",
+              "chance": "0.25",
+              "type": "Skill Gems"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Awakened Enlighten Support",
+              "chance": "0.25",
+              "type": "Skill Gems"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Curio of Potential",
+              "chance": "5",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Eclipse Support",
+              "chance": "5",
+              "type": "Skill Gems"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Invert the Rules Support",
+              "chance": "20",
+              "type": "Skill Gems"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Orb of Conflict",
+              "chance": "35",
+              "type": "Currency"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "The_Shaper": {
+        "normal": {
+          "passes": [
+            {
+              "name": "Fragment of the Hydra",
+              "count": "1",
+              "type": "Fragments"
+            },
+            {
+              "name": "Fragment of the Chimera",
+              "count": "1",
+              "type": "Fragments"
+            },
+            {
+              "name": "Fragment of the Phoenix",
+              "count": "1",
+              "type": "Fragments"
+            },
+            {
+              "name": "Fragment of the Minotaur",
+              "count": "1",
+              "type": "Fragments"
+            }
+          ],
+          "items": [
+            {
+              "category": "GuaranteedUnique",
+              "name": "Shaper's Touch",
+              "chance": "56",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Voidwalker",
+              "chance": "26",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Solstice Vigil",
+              "chance": "15",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Dying Sun",
+              "chance": "3",
+              "type": "Unique Flasks"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Fragment of Knowledge",
+              "chance": "50",
+              "type": "Fragments"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Fragment of Shape",
+              "chance": "50",
+              "type": "Fragments"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Voidstorm Support",
+              "chance": "5",
+              "type": "Skill Gems"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Shaper's Exalted Orb",
+              "chance": "12",
+              "type": "Currency"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Orb of Dominance",
+              "chance": "3",
+              "type": "Currency"
+            }
+          ]
+        },
+        "uber": {
+          "passes": [
+            {
+              "name": "Cosmic Fragment",
+              "count": "4",
+              "type": "Fragments"
+            }
+          ],
+          "items": [
+            {
+              "category": "GuaranteedUnique",
+              "name": "Echoes of Creation",
+              "chance": "40",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Entropic Devastation",
+              "chance": "36",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "The Tides of Time",
+              "chance": "22",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Starforge",
+              "chance": "2",
+              "type": "Unique Weapons"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Sublime Vision",
+              "chance": "2",
+              "type": "Unique Jewels"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Fragment of Knowledge/",
+              "chance": "50",
+              "type": "Fragments"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Fragment of Shape",
+              "chance": "50",
+              "type": "Fragments"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Voidstorm Support",
+              "chance": "5",
+              "type": "Skill Gems"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Shaper's Exalted Orb",
+              "chance": "12",
+              "type": "Currency"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Orb of Dominance",
+              "chance": "3",
+              "type": "Currency"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Uber_Elder": {
+        "normal": {
+          "passes": [
+            {
+              "name": "Fragment of Knowledge",
+              "count": "1",
+              "type": "Fragments"
+            },
+            {
+              "name": "Fragment of Shape",
+              "count": "1",
+              "type": "Fragments"
+            },
+            {
+              "name": "Fragment of Terror",
+              "count": "1",
+              "type": "Fragments"
+            },
+            {
+              "name": "Fragment of Emptiness",
+              "count": "1",
+              "type": "Fragments"
+            }
+          ],
+          "items": [
+            {
+              "category": "GuaranteedUnique",
+              "name": "Mark of the Shaper",
+              "chance": "35",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Mark of the Elder",
+              "chance": "35",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Voidfletcher",
+              "chance": "15",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Indigon",
+              "chance": "12",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Disintegrator",
+              "chance": "3",
+              "type": "Unique Weapons"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Void Shockwave Support",
+              "chance": "5",
+              "type": "Skill Gems"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Cooldown Recovery Support",
+              "chance": "1",
+              "type": "Skill Gems"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Watcher's Eye",
+              "chance": "30",
+              "type": "Unique Jewels"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Shaper's Exalted Orb",
+              "chance": "15",
+              "type": "Currency"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Elder's Exalted Orb",
+              "chance": "15",
+              "type": "Currency"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Orb of Dominance",
+              "chance": "5",
+              "type": "Currency"
+            }
+          ]
+        },
+        "uber": {
+          "passes": [
+            {
+              "name": "Decaying Fragment",
+              "count": "4",
+              "type": "Fragments"
+            }
+          ],
+          "items": [
+            {
+              "category": "GuaranteedUnique",
+              "name": "Call of the Void",
+              "chance": "40",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "The Devourer of Minds",
+              "chance": "30",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Soul Ascension",
+              "chance": "10",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Impresence",
+              "chance": "10",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "The Eternity Shroud",
+              "chance": "6",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Voidforge",
+              "chance": "4",
+              "type": "Unique Weapons"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Sublime Vision",
+              "chance": "1",
+              "type": "Unique Jewels"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Curio of Decay",
+              "chance": "5",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Void Shockwave Support",
+              "chance": "5",
+              "type": "Skill Gems"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Cooldown Recovery Support",
+              "chance": "1",
+              "type": "Skill Gems"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Watcher's Eye",
+              "chance": "30",
+              "type": "Unique Jewels"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Shaper's Exalted Orb",
+              "chance": "15",
+              "type": "Currency"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Elder's Exalted Orb",
+              "chance": "15",
+              "type": "Currency"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Orb of Dominance",
+              "chance": "5",
+              "type": "Currency"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "The_Searing_Exarch": {
+        "normal": {
+          "passes": [
+            {
+              "name": "Incandescent Invitation",
+              "count": "1",
+              "type": "Fragments"
+            }
+          ],
+          "items": [
+            {
+              "category": "GuaranteedUnique",
+              "name": "Dawnbreaker",
+              "chance": "63",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Dawnstrider",
+              "chance": "35",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Dissolution of the Flesh",
+              "chance": "2",
+              "type": "Unique Jewels"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Overheat Support",
+              "chance": "5",
+              "type": "Skill Gems"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Forbidden Flame",
+              "chance": "5",
+              "type": "Unique Jewels"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Exceptional Eldritch Ember",
+              "chance": "15",
+              "type": "Currency"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Eldritch Orb of Annulment",
+              "chance": "5",
+              "type": "Currency"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Eldritch Chaos Orb",
+              "chance": "5",
+              "type": "Currency"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Eldritch Exalted Orb",
+              "chance": "5",
+              "type": "Currency"
+            }
+          ]
+        },
+        "uber": {
+          "passes": [
+            {
+              "name": "Blazing Fragment",
+              "count": "4",
+              "type": "Fragments"
+            }
+          ],
+          "items": [
+            {
+              "category": "GuaranteedUnique",
+              "name": "The Annihilating Light",
+              "chance": "46",
+              "type": "Unique Weapons"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Annihilation's Approach",
+              "chance": "29",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Crystallised Omniscience",
+              "chance": "24",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "The Celestial Brace",
+              "chance": "1",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Curio of Absorption",
+              "chance": "5",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Overheat Support",
+              "chance": "5",
+              "type": "Skill Gems"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Forbidden Flame",
+              "chance": "5",
+              "type": "Unique Jewels"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Exceptional Eldritch Ember",
+              "chance": "15",
+              "type": "Currency"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Eldritch Orb of Annulment",
+              "chance": "5",
+              "type": "Currency"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Eldritch Chaos Orb",
+              "chance": "5",
+              "type": "Currency"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Eldritch Exalted Orb",
+              "chance": "5",
+              "type": "Currency"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "The_Eater_of_Worlds": {
+        "normal": {
+          "passes": [
+            {
+              "name": "Screaming Invitation",
+              "count": "1",
+              "type": "Fragments"
+            }
+          ],
+          "items": [
+            {
+              "category": "GuaranteedUnique",
+              "name": "Inextricable Fate",
+              "chance": "55",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "The Gluttonous Tide",
+              "chance": "43",
+              "type": "Unique Weapons"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Melding of the Flesh",
+              "chance": "2",
+              "type": "Unique Jewels"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Gluttony Support",
+              "chance": "5",
+              "type": "Skill Gems"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Forbidden Flesh",
+              "chance": "5",
+              "type": "Unique Jewels"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Exceptional Eldritch Ichor",
+              "chance": "15",
+              "type": "Currency"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Eldritch Orb of Annulment",
+              "chance": "5",
+              "type": "Currency"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Eldritch Chaos Orb",
+              "chance": "5",
+              "type": "Currency"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Eldritch Exalted Orb",
+              "chance": "5",
+              "type": "Currency"
+            }
+          ]
+        },
+        "uber": {
+          "passes": [
+            {
+              "name": "Devouring Fragment",
+              "count": "4",
+              "type": "Fragments"
+            }
+          ],
+          "items": [
+            {
+              "category": "GuaranteedUnique",
+              "name": "Ravenous Passion",
+              "chance": "68",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Ashes of the Stars",
+              "chance": "30",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Nimis",
+              "chance": "2",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Curio of Consumption",
+              "chance": "5",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Gluttony Support",
+              "chance": "5",
+              "type": "Skill Gems"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Forbidden Flesh",
+              "chance": "5",
+              "type": "Unique Jewels"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Exceptional Eldritch Ichor",
+              "chance": "15",
+              "type": "Currency"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Eldritch Orb of Annulment",
+              "chance": "5",
+              "type": "Currency"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Eldritch Chaos Orb",
+              "chance": "5",
+              "type": "Currency"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Eldritch Exalted Orb",
+              "chance": "5",
+              "type": "Currency"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Sirus_Awakener_of_Worlds": {
+        "normal": {
+          "passes": [
+            {
+              "name": "Al-Hezmin's Crest",
+              "count": "1",
+              "type": "Fragments"
+            },
+            {
+              "name": "Baran's Crest",
+              "count": "1",
+              "type": "Fragments"
+            },
+            {
+              "name": "Drox's Crest",
+              "count": "1",
+              "type": "Fragments"
+            },
+            {
+              "name": "Veritania's Crest",
+              "count": "1",
+              "type": "Fragments"
+            }
+          ],
+          "items": [
+            {
+              "category": "GuaranteedUnique",
+              "name": "Hands of the High Templar",
+              "chance": "40",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Crown of the Inward Eye",
+              "chance": "35",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "The Burden of Truth",
+              "chance": "20",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Thread of Hope",
+              "chance": "5",
+              "type": "Unique Jewels"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Annihilation Support",
+              "chance": "5",
+              "type": "Skill Gems"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Orb of Dominance",
+              "chance": "10",
+              "type": "Currency"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Awakener's Orb",
+              "chance": "15",
+              "type": "Currency"
+            }
+          ]
+        },
+        "uber": {
+          "passes": [
+            {
+              "name": "Awakening Fragment",
+              "count": "4",
+              "type": "Fragments"
+            }
+          ],
+          "items": [
+            {
+              "category": "GuaranteedUnique",
+              "name": "Thread of Hope",
+              "chance": "55",
+              "type": "Unique Jewels"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "The Tempest Rising",
+              "chance": "37",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Oriath's End",
+              "chance": "7.5",
+              "type": "Unique Flasks"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "The Saviour",
+              "chance": "1",
+              "type": "Unique Weapons"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Annihilation Support",
+              "chance": "5",
+              "type": "Skill Gems"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Orb of Dominance",
+              "chance": "10",
+              "type": "Currency"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Awakener's Orb",
+              "chance": "15",
+              "type": "Currency"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Venarius": {
+        "normal": {
+          "passes": [
+            {
+              "name": "Cortex",
+              "count": "1",
+              "type": "Unique Maps"
+            }
+          ],
+          "items": [
+            {
+              "category": "GuaranteedUnique",
+              "name": "Offering to the Serpent",
+              "chance": "45",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Perepiteia",
+              "chance": "35",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Garb of the Ephemeral",
+              "chance": "15",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Bottled Faith",
+              "chance": "5",
+              "type": "Unique Flasks"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Greater Kinetic Instability Support",
+              "chance": "5",
+              "type": "Skill Gems"
+            }
+          ]
+        },
+        "uber": {
+          "passes": [
+            {
+              "name": "Synthesising Fragment",
+              "count": "4",
+              "type": "Fragments"
+            }
+          ],
+          "items": [
+            {
+              "category": "GuaranteedUnique",
+              "name": "Nebulis",
+              "chance": "40",
+              "type": "Unique Weapons"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Mask of the Tribunal",
+              "chance": "30",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "The Apostate",
+              "chance": "15",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Circle of Ambition",
+              "chance": "10",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Rational Doctrine",
+              "chance": "5",
+              "type": "Unique Jewels"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Greater Kinetic Instability Support",
+              "chance": "5",
+              "type": "Skill Gems"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Incarnation_of_Dread": {
+        "normal": {
+          "passes": [
+            {
+              "name": "Echo of Reverence",
+              "count": "1",
+              "type": "Fragments"
+            }
+          ],
+          "items": [
+            {
+              "category": "GuaranteedUnique",
+              "name": "Bonemeld",
+              "chance": "55",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "The Dark Monarch",
+              "chance": "35",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Seven Teachings",
+              "chance": "8",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Wine of the Prophet",
+              "chance": "2",
+              "type": "Unique Flasks"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Bound By Destiny",
+              "chance": "10",
+              "type": "Unique Jewels"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Congregation Support",
+              "chance": "5",
+              "type": "Skill Gems"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Orb of Unravelling",
+              "chance": "33",
+              "type": "Currency"
+            }
+          ]
+        },
+        "uber": {
+          "passes": [
+            {
+              "name": "Reverent Fragment",
+              "count": "4",
+              "type": "Fragments"
+            }
+          ],
+          "items": [
+            {
+              "category": "GuaranteedUnique",
+              "name": "The Hallowed Monarch",
+              "chance": "54",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Whispers of Infinity",
+              "chance": "30",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Wellwater Phylactery",
+              "chance": "14",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "The Golden Charlatan",
+              "chance": "2",
+              "type": "Unique Weapons"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Bound By Destiny",
+              "chance": "10",
+              "type": "Unique Jewels"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Congregation Support",
+              "chance": "5",
+              "type": "Skill Gems"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Orb of Unravelling",
+              "chance": "33",
+              "type": "Currency"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Incarnation_of_Fear": {
+        "normal": {
+          "passes": [
+            {
+              "name": "Echo of Trauma",
+              "count": "1",
+              "type": "Fragments"
+            }
+          ],
+          "items": [
+            {
+              "category": "GuaranteedUnique",
+              "name": "The Unseen Hue",
+              "chance": "32",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Servant of Decay",
+              "chance": "32",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Enmity's Embrace",
+              "chance": "32",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Starcaller",
+              "chance": "2",
+              "type": "Unique Weapons"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Bound By Destiny",
+              "chance": "10",
+              "type": "Unique Jewels"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Greater Devour Support",
+              "chance": "5",
+              "type": "Skill Gems"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Orb of Intention",
+              "chance": "50",
+              "type": "Currency"
+            }
+          ]
+        },
+        "uber": {
+          "passes": [
+            {
+              "name": "Traumatic Fragment",
+              "count": "4",
+              "type": "Fragments"
+            }
+          ],
+          "items": [
+            {
+              "category": "GuaranteedUnique",
+              "name": "Coiling Whisper",
+              "chance": "32",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "The Caged Mammoth",
+              "chance": "32",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Wing of the Wyvern",
+              "chance": "32",
+              "type": "Unique Weapons"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Woespike",
+              "chance": "2",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Bound By Destiny",
+              "chance": "10",
+              "type": "Unique Jewels"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Greater Devour Support",
+              "chance": "5",
+              "type": "Skill Gems"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Orb of Intention",
+              "chance": "50",
+              "type": "Currency"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Incarnation_of_Neglect": {
+        "normal": {
+          "passes": [
+            {
+              "name": "Echo of Loneliness",
+              "count": "1",
+              "type": "Fragments"
+            }
+          ],
+          "items": [
+            {
+              "category": "GuaranteedUnique",
+              "name": "Betrayal's Sting",
+              "chance": "50%",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "The Arkhon's Tools",
+              "chance": "38%",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Venarius' Astrolabe",
+              "chance": "10%",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Legacy of the Rose",
+              "chance": "2%",
+              "type": "Unique Weapons"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Bound By Destiny",
+              "chance": "10",
+              "type": "Unique Jewels"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Frostmage Support",
+              "chance": "5",
+              "type": "Skill Gems"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Orb of Remembrance",
+              "chance": "33",
+              "type": "Currency"
+            }
+          ]
+        },
+        "uber": {
+          "passes": [
+            {
+              "name": "Lonely Fragment",
+              "count": "4",
+              "type": "Fragments"
+            }
+          ],
+          "items": [
+            {
+              "category": "GuaranteedUnique",
+              "name": "Refuge in Isolation",
+              "chance": "55",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Bitter Instinct",
+              "chance": "30",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Haunting Memories",
+              "chance": "13",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Festering Resentment",
+              "chance": "2",
+              "type": "Unique Weapons"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Bound By Destiny",
+              "chance": "10",
+              "type": "Unique Jewels"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Frostmage Support",
+              "chance": "5",
+              "type": "Skill Gems"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Orb of Remembrance",
+              "chance": "33",
+              "type": "Currency"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Catarina_Master_of_Undeath": {
+        "normal": {
+          "passes": [
+            {
+              "name": "Syndicate Medallion",
+              "count": "1",
+              "type": "Fragments"
+            }
+          ],
+          "items": [
+            {
+              "category": "GuaranteedUnique",
+              "name": "Cinderswallow Urn",
+              "chance": "30",
+              "type": "Unique Flasks"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Spinehail",
+              "chance": "20",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "The Devouring Diadem",
+              "chance": "16",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Bitterbind Point",
+              "chance": "10",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "The Queen's Hunger",
+              "chance": "6",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Cane of Kulemak",
+              "chance": "18",
+              "type": "Unique Weapons"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Minion Pact Support",
+              "chance": "5",
+              "type": "Skill Gems"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Veiled Exalted Orb",
+              "chance": "25",
+              "type": "Currency"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Allflame Ember of Resplendence",
+              "chance": "60",
+              "type": "Allflame Embers"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Allflame Ember of Kulemak",
+              "chance": "60",
+              "type": "Allflame Embers"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Allflame Ember of Propagation",
+              "chance": "30",
+              "type": "Allflame Embers"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "The_Elder": {
+        "normal": {
+          "passes": [
+            {
+              "name": "Fragment of Purification",
+              "count": "1",
+              "type": "Fragments"
+            },
+            {
+              "name": "Fragment of Constriction",
+              "count": "1",
+              "type": "Fragments"
+            },
+            {
+              "name": "Fragment of Enslavement",
+              "count": "1",
+              "type": "Fragments"
+            },
+            {
+              "name": "Fragment of Eradication",
+              "count": "1",
+              "type": "Fragments"
+            }
+          ],
+          "items": [
+            {
+              "category": "GuaranteedUnique",
+              "name": "Cyclopean Coil",
+              "chance": "30",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Blasphemer's Grasp",
+              "chance": "30",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Nebuloch",
+              "chance": "10",
+              "type": "Unique Weapons"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Hopeshredder",
+              "chance": "10",
+              "type": "Unique Weapons"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Shimmeron",
+              "chance": "10",
+              "type": "Unique Weapons"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Impresence",
+              "chance": "10",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Fragment of Terror",
+              "chance": "50",
+              "type": "Fragments"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Fragment of Emptiness",
+              "chance": "50",
+              "type": "Fragments"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Elder's Exalted Orb",
+              "chance": "10",
+              "type": "Currency"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Orb of Dominance",
+              "chance": "2",
+              "type": "Currency"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Watcher's Eye",
+              "chance": "40",
+              "type": "Unique Jewels"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "The_King_in_the_Mists": {
+        "normal": {
+          "passes": [
+            {
+              "name": "An Audience With The King",
+              "count": "1",
+              "type": "Fragments"
+            }
+          ],
+          "items": [
+            {
+              "category": "GuaranteedUnique",
+              "name": "The Untouched Soul",
+              "chance": "40",
+              "type": "Unique Accessories"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "Pragmatism",
+              "chance": "35",
+              "type": "Unique Armours"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "The Light of Meaning",
+              "chance": "20",
+              "type": "Unique Jewels"
+            },
+            {
+              "category": "GuaranteedUnique",
+              "name": "The Burden of Shadows",
+              "chance": "5",
+              "type": "Unique Weapons"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Hextoad Support",
+              "chance": "5",
+              "type": "Skill Gems"
+            },
+            {
+              "category": "Additionaldrops",
+              "name": "Hexpass Support",
+              "chance": "5",
+              "type": "Skill Gems"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

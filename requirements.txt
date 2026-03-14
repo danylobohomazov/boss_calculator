@@ -1,5 +1,7 @@
-django
+django~=6.0.3
 pep8-naming
 django-debug-toolbar
 django-crispy-forms
 crispy-bootstrap4
+
+requests~=2.32.5

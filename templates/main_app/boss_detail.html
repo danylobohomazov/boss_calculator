@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>{{ boss.name }} drop</h1>
+
+  <!-- Поле для вычитания -->
+  <p>
+    Subtract per attempt: <input type="number" id="subtract-input" value="0" style="width:80px;">
+  </p>
+  <h2>Divine cost: {{ divine }}</h2>
+  <!-- Поле для количества попыток в час -->
+  <p>
+    Attempts per hour: <input type="number" id="attempts-input" value="10" style="width:80px;">
+  </p>
+
+  <!-- Общий результат -->
+  <p>
+    Chaos profit per run: <span id="total-one-minus">0</span> |
+    Chaos profit per hour: <span id="total-per-hour">0</span>
+  </p>
+
+  <!-- Общий результат -->
+  <p>
+    Divine profit per run: <span id="total-one-minus-divine">0</span> |
+    Divine profit per hour: <span id="total-per-hour-divine">0</span>
+  </p>
+
+  {% regroup boss.items.all by category as grouped_items %}
+  {% for group in grouped_items %}
+    <h2>{{ group.grouper }}</h2>
+    {% if boss.items %}
+      <p>Average per 1 try: <span class="avg-one" data-group="{{ group.grouper }}">0</span></p>
+      <table class="table" data-group="{{ group.grouper }}">
+        <thead>
+        <tr>
+          <th class="w-50">Name</th>
+          <th>Chance (%)</th>
+          <th>Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for item in group.list %}
+          <tr>
+            <td>{{ item.name }}</td>
+            <td><input type="number" class="editable" value="{{ item.chance }}" data-field="chance" style="width:80px;">
+            </td>
+            <td><input type="number" class="editable" value="{{ item.price }}" data-field="price" style="width:80px;">
+            </td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    {% endif %}
+  {% endfor %}
+
+  <script>
+      function calcAvg(table) {
+          let sum = 0;
+          table.querySelectorAll('tbody tr').forEach(tr => {
+              const chanceInput = tr.querySelector('input[data-field="chance"]');
+              const priceInput = tr.querySelector('input[data-field="price"]');
+              if (chanceInput && priceInput) {
+                  const chance = parseFloat(chanceInput.value) || 0;
+                  const price = parseFloat(priceInput.value) || 0;
+                  sum += chance * price / 100; // среднее за 1 попытку
+              }
+          });
+          return sum;
+      }
+
+      function recalcAll() {
+          let totalOne = 0;
+
+          // пересчет каждой таблицы
+          document.querySelectorAll('.table').forEach(table => {
+              const group = table.dataset.group;
+              const avgOne = calcAvg(table);
+              totalOne += avgOne;
+
+              const spanOne = document.querySelector(`.avg-one[data-group="${group}"]`);
+              if (spanOne) spanOne.textContent = avgOne.toFixed(2);
+          });
+
+          const subtractPerAttempt = parseFloat(document.getElementById('subtract-input').value) || 0;
+          const attempts = parseFloat(document.getElementById('attempts-input').value) || 10;
+
+          // итог за 1 попытку с вычитанием
+          const totalOneMinus = totalOne - subtractPerAttempt;
+          const totalOneMinusDivine = (totalOne - subtractPerAttempt) / {{ divine }};
+
+          // итог за количество попыток
+          const totalPerHour = totalOneMinus * attempts;
+          const totalPerHourDivine = (totalOneMinus * attempts) / {{ divine }};
+
+          // обновляем общий результат
+          document.getElementById('total-one-minus').textContent = totalOneMinus.toFixed(2);
+          document.getElementById('total-per-hour').textContent = totalPerHour.toFixed(2);
+                    // обновляем общий результат
+          document.getElementById('total-one-minus-divine').textContent = totalOneMinusDivine.toFixed(2);
+          document.getElementById('total-per-hour-divine').textContent = totalPerHourDivine.toFixed(2);
+      }
+
+      // обработчики
+      document.querySelectorAll('.editable').forEach(input => {
+          input.addEventListener('input', recalcAll);
+      });
+      document.getElementById('subtract-input').addEventListener('input', recalcAll);
+      document.getElementById('attempts-input').addEventListener('input', recalcAll);
+
+      // первый расчет при загрузке
+      recalcAll();
+  </script>
+{% endblock %}
