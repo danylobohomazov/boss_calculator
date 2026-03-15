@@ -1,73 +1,180 @@
-import requests
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import Select
+from unicodedata import category
+
+from main_app.jewel_found import jewel_calculator
 
 CATEGORIES = {
-    "Currency": "Currency",
-    "Unique Weapons": "UniqueWeapon",
-    "Unique Armours": "UniqueArmour",
-    "Unique Jewels": "UniqueJewel",
-    "Unique Accessories": "UniqueAccessory",
-    "Skill Gems": "SkillGem",
-    "Allflame Embers": "AllflameEmber",
-    "Unique Maps": "UniqueMap",
-    "Unique Flasks": "UniqueFlask",
-    "Fragments": "Fragment",
+    "Currency": "currency",
+    "Unique Weapons": "unique-weapons",
+    "Unique Armours": "unique-armours",
+    "Unique Jewels": "unique-jewels",
+    "Unique Accessories": "unique-accessories",
+    "Skill Gems": "skill-gems",
+    "Allflame Embers": "allflame-embers",
+    "Unique Maps": "unique-maps",
+    "Unique Flasks": "unique-flasks",
+    "Fragments": "fragments",
+    "Invitations": "invitations",
 }
 
-LEAGUE = "Mirage"  # твоя лига
+LEAGUE = "mirage"
+START_URL = "https://poe.ninja/poe1/economy/"
 
 
-CACHE = {}
+def start_driver():
+    opt = Options()
+    opt.add_argument("--headless")
+    opt.add_argument("--disable-gpu")
+    driver = webdriver.Chrome(options=opt)
+    return driver
 
 
-def load_category(category):
+def end_driver(driver):
+    driver.quit()
+
+
+def find_item_price(driver, name: str, category: str, divine_price: int = 1) -> float:
+    level = "1"
+    if "|" in name:
+        name, level = name.split("|")
+    if category == "Unique Jewels" or level == "item":
+        price = jewel_calculator(name, divine_price, level)
+        return price
     type_ = CATEGORIES[category]
+    url = f"{START_URL}{LEAGUE}/{type_}"
 
-    if type_ in ["Currency", "Fragment"]:
-        url = f"https://poe.ninja/api/data/currencyoverview?league={LEAGUE}&type={type_}"
-        key = "currencyTypeName"
+    driver.get(url)
+
+    if type_ in ["currency", "fragments", "allflame-embers"]:
+        container_selector = "#main > astro-island > div > section > div > main > section > div > div > div:nth-child(2) > div"
+        value_selector = "td.text-right"
     else:
-        url = f"https://poe.ninja/api/data/itemoverview?league={LEAGUE}&type={type_}"
-        key = "name"
+        container_selector = "#main > astro-island > div > section > div > main > section > div > div > div.item-overview > div:nth-child(1) > div"
+        value_selector = "td.sorted"
 
-    data = requests.get(url, timeout=5).json()
+    container = driver.find_element(By.CSS_SELECTOR, container_selector)
 
-    items = {}
+    search_input = container.find_element(By.CSS_SELECTOR, "input._text-input_x7fc5_14")
+    search_input.clear()
+    search_input.send_keys(name)
+    search_input.send_keys(Keys.RETURN)
 
-    if type_ in ["Currency", "Fragment"]:
-        # stack sizes
-        stack_sizes = {
-            d["name"]: d.get("stackSize", 1)
-            for d in data["currencyDetails"]
-        }
+    if category == "Skill Gems":
+        # находим все label с select
+        labels = container.find_elements(By.CSS_SELECTOR, "label:has(select)")
 
-        for item in data["lines"]:
-            name = item[key]
-            stack = stack_sizes.get(name, 1)
+        # значения которые нужно выбрать
+        values = ["1", "0-19", "No"]
 
-            price = (item.get("chaosEquivalent") or 0) * stack
+        for label, value in zip(labels, values):
+            select = Select(label.find_element(By.TAG_NAME, "select"))
+            select.select_by_value(value)
 
-            items[name.lower()] = price
+    if category == "Unique Weapons" or category == "Unique Armours":
+        # находим все label с select
+        labels = container.find_elements(By.CSS_SELECTOR, "label:has(select)")
 
-    else:
-        for item in data["lines"]:
-            items[item[key].lower()] = item.get("chaosValue")
+        # значения которые нужно выбрать
+        values = ["1-4"]
 
-    CACHE[category] = items
+        for label, value in zip(labels, values):
+            select = Select(label.find_element(By.TAG_NAME, "select"))
+            select.select_by_value(value)
+    row = driver.find_element(By.CSS_SELECTOR, "table.data-table tbody tr")
+
+    value_cell = row.find_element(By.CSS_SELECTOR, value_selector)
+
+    price = float(value_cell.text)
+
+    alt = None
+    try:
+        alt = value_cell.find_element(By.TAG_NAME, "img").get_attribute("alt")
+    except:
+        pass
+
+    #img = row.find_element(By.CSS_SELECTOR, "td img").get_attribute("src")
+
+    if alt == "Divine Orb":
+        price *= divine_price
+
+    return price
 
 
-def find_item_price(name, category):
-    name_lower = name.lower()
-
-    if category not in CACHE:
-        load_category(category)
-
-    price = CACHE[category].get(name_lower)
-
-    if price:
-        return {
-            "category": category,
-            "name": name,
-            "price": price
-        }
-
-    return None
+if __name__ == "__main__":
+    driver = start_driver()
+    items = [
+        {
+            "name": "Syndicate Medallion",
+            "category": "Fragments",
+        },
+        {
+            "name": "Voidforge",
+            "category": "Unique Weapons",
+        },
+        {
+            "name": "Svalinn",
+            "category": "Unique Armours",
+        },
+        {
+            "name": "Voices",
+            "category": "Unique Jewels",
+        },
+        {
+            "name": "Awakened Enlighten Support",
+            "category": "Skill Gems",
+        },
+        {
+            "name": "Allflame Ember of Kulemak",
+            "category": "Allflame Embers",
+        },
+        {
+            "name": "Cortex",
+            "category": "Unique Maps",
+        },
+        {
+            "name": "Progenesis",
+            "category": "Unique Flasks",
+        },
+        {
+            "name": "Mirror of Kalandra",
+            "category": "Currency",
+        },
+        {
+            "name": "Dissolution of the Flesh",
+            "category": "Unique Jewels",
+        },
+        {
+            "name": "Watcher's Eye|85",
+            "category": "Unique Jewels",
+        },
+        {
+            "name": "Watcher's Eye|87",
+            "category": "Unique Jewels",
+        },
+        {
+            "name": "Thread of Hope|86M",
+            "category": "Unique Jewels",
+        },
+        {
+            "name": "Thread of Hope|87",
+            "category": "Unique Jewels",
+        },
+        {
+            "name": "Bitterbind Point|item",
+            "category": "Unique Armours",
+        },
+        {
+            "name": "Cinderswallow Urn|item",
+            "category": "Unique Flasks",
+        },
+    ]
+    for _ in range(10):
+        print(find_item_price(driver, "Thread of Hope|86M", "Unique Jewels", 225))
+    #for item in items:
+    #    print(item["name"])
+    #    print(find_item_price(driver, item["name"], item["category"], 225))
+    end_driver(driver)

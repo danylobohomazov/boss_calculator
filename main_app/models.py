@@ -17,7 +17,7 @@ class Item(models.Model):
     boss = models.ForeignKey(Boss, on_delete=models.CASCADE, related_name="items")
     category = models.CharField(max_length=100)
     type = models.CharField(max_length=100)
-
+    img = models.TextField(default="")
 
 class Pass(models.Model):
     boss = models.ForeignKey(Boss, on_delete=models.CASCADE, related_name="passes")
@@ -25,3 +25,4 @@ class Pass(models.Model):
     price = models.DecimalField(max_digits=10, decimal_places=2)
     count = models.IntegerField()
     type = models.CharField(max_length=100)
+    img = models.TextField(default="")

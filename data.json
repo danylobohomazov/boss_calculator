@@ -343,7 +343,7 @@
               "category": "GuaranteedUnique",
               "name": "Voidfletcher",
               "chance": "15",
-              "type": "Unique Accessories"
+              "type": "Unique Armours"
             },
             {
               "category": "GuaranteedUnique",
@@ -499,7 +499,7 @@
             {
               "name": "Incandescent Invitation",
               "count": "1",
-              "type": "Fragments"
+              "type": "Invitations"
             }
           ],
           "items": [
@@ -645,7 +645,7 @@
             {
               "name": "Screaming Invitation",
               "count": "1",
-              "type": "Fragments"
+              "type": "Invitations"
             }
           ],
           "items": [
@@ -1069,13 +1069,13 @@
               "category": "GuaranteedUnique",
               "name": "Whispers of Infinity",
               "chance": "30",
-              "type": "Unique Armours"
+              "type": "Unique Accessories"
             },
             {
               "category": "GuaranteedUnique",
               "name": "Wellwater Phylactery",
               "chance": "14",
-              "type": "Unique Accessories"
+              "type": "Unique Flasks"
             },
             {
               "category": "GuaranteedUnique",
@@ -1346,7 +1346,7 @@
               "category": "GuaranteedUnique",
               "name": "Spinehail",
               "chance": "20",
-              "type": "Unique Accessories"
+              "type": "Unique Armours"
             },
             {
               "category": "GuaranteedUnique",

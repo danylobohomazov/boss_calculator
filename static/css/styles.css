@@ -1,8 +1,184 @@
 body {
     margin-top: 20px;
+    background-image: url("/static/img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
 }
 
 .link-to-page {
     float: right;
     margin: 0 2px 0 2px;
+}
+
+/* Общие стили для таблиц с одинаковым классом */
+.table-consistent {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #222;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Заголовки таблицы */
+.table-consistent thead {
+    background-color: #444;
+    color: white;
+}
+
+/* Фиксированные ширины колонок */
+.table-consistent th:nth-child(1),
+.table-consistent td:nth-child(1) {
+    width: 50px;
+}
+
+/* картинки */
+.table-consistent th:nth-child(2),
+.table-consistent td:nth-child(2) {
+    width: 200px;
+}
+
+/* Name */
+.table-consistent th:nth-child(3),
+.table-consistent td:nth-child(3) {
+    width: 100px;
+}
+
+/* Chance */
+.table-consistent th:nth-child(4),
+.table-consistent td:nth-child(4) {
+    width: 100px;
+}
+
+/* Price */
+
+/* Выравнивание текста */
+.table-consistent th,
+.table-consistent td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.5rem 0.75rem;
+}
+
+.table-consistent td input {
+    margin: 0 auto;
+    display: block;
+}
+
+/* Input-поля */
+input.editable {
+    background-color: #2f2f2f;
+    color: white;
+    border-radius: 0.5rem;
+    border: 1px solid #555;
+    width: 80px;
+    text-align: center;
+}
+
+/* Input при фокусе */
+input.editable:focus {
+    background-color: #444;
+    border-color: #66afe9;
+    box-shadow: 0 0 5px #66afe9;
+    outline: none;
+}
+
+/* Подсветка строки при наведении */
+.table-consistent tbody tr:hover {
+    background-color: #333;
+    color: white;
+    transition: background-color 0.2s;
+}
+
+/* Изображения */
+.table-consistent td img {
+    width: 40px;
+    height: auto;
+    border-radius: 0.25rem;
+}
+
+/* Чередование строк (альтернативный фон) */
+.table-consistent tbody tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+.inline-container {
+    display: flex;
+    align-items: center; /* выравнивание по вертикали */
+    gap: 10px; /* расстояние между элементами */
+}
+
+.profit-row {
+    margin: 20px 0;
+}
+
+.profit-card {
+    background: #2a2a2a;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    transition: transform 0.15s;
+}
+
+.profit-card:hover {
+    transform: translateY(-2px);
+}
+
+.profit-title {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 5px;
+}
+
+.profit-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4fd1c5;
+}
+
+.sidebar-nav {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+/* расстояние между пунктами */
+.sidebar-nav li {
+    margin-bottom: 10px;
+}
+
+/* сами блоки */
+.sidebar-link {
+    display: block;
+    padding: 10px 14px;
+
+    color: #eee;
+    text-decoration: none;
+    font-weight: 500;
+
+    border-radius: 10px;
+
+    /* тёмный фон */
+    background: linear-gradient(145deg, #2e2e2e, #242424);
+
+    /* лёгкая тень */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.35);
+
+    transition: all 0.2s ease;
+}
+
+/* hover */
+.sidebar-link:hover {
+    background: linear-gradient(145deg, #3a3a3a, #2c2c2c);
+    transform: translateX(4px);
+    color: white;
+}
+
+/* активный элемент */
+.sidebar-link.active {
+    background: linear-gradient(135deg, #00c6ff, #7b2ff7);
+    color: white;
+    font-weight: 600;
 }
