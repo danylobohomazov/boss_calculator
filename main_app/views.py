@@ -58,13 +58,16 @@ def calculate():
 
 def reload_data(request):
     cache_clear()
+    load_data_to_cache()
     return redirect("main_app:index")
 
 
 def load_data_to_cache():
+    print("Loading...")
     driver = start_driver()
     new_logic(driver)
     end_driver(driver)
+    print("Done!")
 
 
 def make_price(element, divine_cost, site):

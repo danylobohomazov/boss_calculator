@@ -1,8 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <a href="{% url 'main_app:index' %}" class="sidebar-link" style="text-align: center">Home</a>
-  <h1 style="text-align: center" >{{ boss.name }}</h1>
+  <h1 class="main-title">{{ boss.name }}</h1>
   <div class="inline-container">
     <img
         src="https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lNb2RWYWx1ZXMiLCJzY2FsZSI6MX1d/ec48896769/CurrencyModValues.png"
@@ -17,10 +16,10 @@
     {% for pass_ in boss.passes.all %}
       <img src="{{ pass_.img }}" alt="{{ pass_.name }}">
     {% endfor %}
-    Subtract per attempt: <input class="form-control" type="number" id="subtract-input" value="{{ summa }}"
-                                 style="width:80px; background-color:#2f2f2f; color:white; border-radius:0.5rem; transition:0.2s;">
-    Attempts per hour: <input class="form-control" type="number" id="attempts-input" value="{{ boss.runs_per_our }}"
-                              style="width:80px; background-color:#2f2f2f; color:white; border-radius:0.5rem; transition:0.2s;">
+    Lost per run: <input class="form-control" type="number" id="subtract-input" value="{{ summa }}"
+                         style="width:80px; background-color:#2f2f2f; color:white; border-radius:0.5rem; transition:0.2s;">
+    Runs per hour: <input class="form-control" type="number" id="attempts-input" value="{{ boss.runs_per_our }}"
+                          style="width:80px; background-color:#2f2f2f; color:white; border-radius:0.5rem; transition:0.2s;">
   </p>
 
   <!-- Общий результат -->
@@ -58,7 +57,11 @@
 
   {% regroup boss.items.all by category as grouped_items %}
   {% for group in grouped_items %}
-    <h2>{{ group.grouper }}</h2>
+    {% if group.grouper == "GuaranteedUnique" %}
+      <h2 class="section-title">Guaranteed Unique</h2>
+    {% else %}
+      <h2 class="section-title">Additional Item</h2>
+    {% endif %}
     {% if boss.items %}
       <p>Average per 1 try: <span class="avg-one" data-group="{{ group.grouper }}">0</span></p>
       <table class="table table-consistent" data-group="{{ group.grouper }}">
@@ -87,7 +90,8 @@
       </table>
     {% endif %}
   {% endfor %}
-
+  <br>
+  <a href="{% url 'main_app:index' %}" class="sidebar-link" style="text-align: center">Back</a>
   <script>
       function calcAvg(table) {
           let sum = 0;

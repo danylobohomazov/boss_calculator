@@ -11,13 +11,10 @@
           crossorigin="anonymous">
     <!-- Add additional CSS in static file -->
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}?v=4">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}?v=5">
 </head>
 
 <body style="background-color: dimgray;">
-<div id="loader">
-    <div class="spinner"></div>
-</div>
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-10 " style="margin: 0 170px">
@@ -30,9 +27,3 @@
 </body>
 
 </html>
-
-<script>
-window.addEventListener("load", function(){
-    document.getElementById("loader").style.display = "none";
-});
-</script>
