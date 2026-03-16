@@ -15,16 +15,12 @@
 </head>
 
 <body style="background-color: dimgray;">
+<div id="loader">
+    <div class="spinner"></div>
+</div>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-sm-2">
-
-            {% block sidebar %}
-                {% include "includes/sidebar.html" %}
-            {% endblock %}
-
-        </div>
-        <div class="col-sm-10 ">
+        <div class="col-sm-10 " style="margin: 0 170px">
 
             {% block content %}{% endblock %}
 
@@ -34,3 +30,9 @@
 </body>
 
 </html>
+
+<script>
+window.addEventListener("load", function(){
+    document.getElementById("loader").style.display = "none";
+});
+</script>

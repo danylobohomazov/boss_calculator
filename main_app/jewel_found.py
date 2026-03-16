@@ -34,15 +34,7 @@ def safe_fetch(session, url, retries=5, delay=0.5):
         time.sleep(delay)
     raise Exception("Fetch API failed after retries")
 
-def jewel_calculator(name: str, divine_price: int=1, level: str="1"):
-    min_level = 1
-    max_level = None
-    if level == "item":
-        pass
-    elif "M" in level:
-        max_level = int(level[:2])
-    else:
-        min_level = int(level)
+def start_session():
     # создаём сессию один раз для всех запросов
     session = requests.Session()
     session.headers.update({
@@ -51,6 +43,17 @@ def jewel_calculator(name: str, divine_price: int=1, level: str="1"):
         "Content-Type": "application/json",
         "Origin": "https://www.pathofexile.com",
     })
+    return session
+
+def jewel_calculator(session, name: str, divine_price: int=1, gcp_price: float = 1, level: str="1"):
+    min_level = 1
+    max_level = None
+    if level == "item":
+        pass
+    elif "M" in level:
+        max_level = int(level[:2])
+    else:
+        min_level = int(level)
 
     search_url = f"https://www.pathofexile.com/api/trade/search/{LEAGUE}"
     query = {
@@ -72,6 +75,7 @@ def jewel_calculator(name: str, divine_price: int=1, level: str="1"):
     }
 
     # надёжный поиск
+    time.sleep(5)
     data = safe_post(session, search_url, query, retries=5, delay=1.2)
     search_id = data["id"]
     ids = data["result"][:10]
@@ -87,6 +91,8 @@ def jewel_calculator(name: str, divine_price: int=1, level: str="1"):
         price = price_data["amount"]
         if price_data["currency"] == "divine":
             price *= divine_price
+        if price_data["currency"] == "gcp":
+            price *= gcp_price
         prices.append(price)
 
     return statistics.median(prices)

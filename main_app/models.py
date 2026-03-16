@@ -8,6 +8,12 @@ TYPE_CHOICES = (
 
 class Boss(models.Model):
     name = models.CharField(max_length=100)
+    profit_per_run = models.DecimalField(decimal_places=2, max_digits=10, default=0)
+    runs_per_our = models.IntegerField(default=10)
+
+    @property
+    def total_profit(self):
+        return self.profit_per_run * self.runs_per_our
 
 
 class Item(models.Model):
@@ -18,6 +24,7 @@ class Item(models.Model):
     category = models.CharField(max_length=100)
     type = models.CharField(max_length=100)
     img = models.TextField(default="")
+
 
 class Pass(models.Model):
     boss = models.ForeignKey(Boss, on_delete=models.CASCADE, related_name="passes")

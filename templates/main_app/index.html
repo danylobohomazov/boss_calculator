@@ -1,6 +1,33 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <h1>Home</h1>
-
+  <a href="{% url 'main_app:reload_data' %}" class="btn btn-primary">Refresh</a>
+  <table class="table table-consistent">
+    <thead>
+    <tr>
+      <th></th>
+      <th>Name</th>
+      <th>Profit / Hour</th>
+      <th> Runs</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for boss in bosses %}
+      <tr>
+        <td>
+          {% for pass_ in boss.passes.all %}
+            <img src="{{ pass_.img }}" alt="{{ pass_.name }}">
+          {% endfor %}
+        </td>
+        <td><a href="{% url 'main_app:boss-detail' boss.id %}" class="sidebar-link">{{ boss.name }}</a></td>
+        <td>
+          {{ boss.total_profit }}
+        </td>
+        <td>
+          {{ boss.runs_per_our }}
+        </td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
 {% endblock %}

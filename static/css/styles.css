@@ -182,3 +182,63 @@ input.editable:focus {
     color: white;
     font-weight: 600;
 }
+
+.main-title {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+
+    background: linear-gradient(90deg, #ffffff, #9be7ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow: 0 0 15px rgba(0, 200, 255, 0.35);
+}
+
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 80px;
+    height: 3px;
+
+    background: linear-gradient(90deg, #00e5ff, transparent);
+    border-radius: 2px;
+}
+
+.section-subtitle {
+    font-size: 15px;
+    color: #9fdfff;
+    margin-bottom: 20px;
+
+    opacity: 0.9;
+}
+
+#loading-bar{
+    position: fixed;
+    top:0;
+    left:0;
+    height:4px;
+    width:0%;
+    background:#3498db;
+    transition: width 0.3s;
+}
+
+.spinner{
+    width: 60px;
+    height: 60px;
+    border: 6px solid #eee;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
